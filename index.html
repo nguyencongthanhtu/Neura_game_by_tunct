@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEURA GAME</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./images/Icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- SECTION  TO CENTER GAME -->
+    <section class="centerFrame">
+      <!-- SPLASH SCREEN -->
+      <div id="splashScreen">
+        <!-- UNDRAGABLE IMAGES -->
+        <img
+          src="./images/Start_Screen.jpg"
+          alt="Splash Screen Picture"
+          onmousedown="return false;"
+          ondragstart="return false;"
+          draggable="false"
+        />
+        <div id="buttonAndInstrctions">
+          <h1>
+            Mouse and Click to Shoot, Protect from Malware
+          </h1>
+          <button id="startButton">Start Playing!</button>
+        </div>
+      </div>
+
+      <!-- GAME SCREEN -->
+      <div id="gameScreen">
+        <div id="gameBox">
+          <!-- UNDRAGABLE IMAGES -->
+          <img
+            src="./images/Game_Background.jpg"
+            alt="Game Background Picture"
+            onmousedown="return false;"
+            ondragstart="return false;"
+            draggable="false"
+          />
+          <div id="gameScore">
+            <h2 id="hiScore">Hi-Score: 0</h2>
+            <h2 id="score">Score: 0</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- GAME OVER SCREEN -->
+      <div id="gameOverScreen">
+        <img
+          src="./images/Game_Over.jpg"
+          alt="Game Over Picture"
+          onmousedown="return false;"
+          ondragstart="return false;"
+          draggable="false"
+        />
+        <div id="buttonAndFrase">
+          <h1>Don´t Give Up!!! Save The Poop!!</h1>
+          <button id="restartButton">Play Again!</button>
+        </div>
+      </div>
+
+      <!-- ALL THE SOUND FILES -->
+      <audio hidden="hidden" controls="false" loop id="backgroundMusic">
+        <source src="./music/Music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="smackSound">
+        <source src="./music/Smack_Sound.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="Ouch1Sound">
+        <source src="./music/Ouch1.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="Ouch2Sound">
+        <source src="./music/Ouch2.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="Ouch3Sound">
+        <source src="./music/Ouch3.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="Ouch4Sound">
+        <source src="./music/Ouch4.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <audio hidden="hidden" controls="false" id="Uh_Oh">
+        <source src="./music/Uh_Oh.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- SCRIPTS-->
+      <script src="./scripts/splat.js"></script>
+      <script src="./scripts/fly.js"></script>
+      <script src="./scripts/poop.js"></script>
+      <script src="./scripts/raquet.js"></script>
+      <script src="./scripts/main.js"></script>
+      <script src="./scripts/game.js"></script>
+    </section>
+  </body>
+</html>
